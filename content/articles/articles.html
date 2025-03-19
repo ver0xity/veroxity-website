@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<title> List of all Articles </title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="../../media/icons/bookshelf.ico">
+		<link rel="stylesheet" id="themeStylesheetLink" href="../../css/themes/default.css">
+		<link rel="stylesheet" href="../../css/common.css">
+
+	</head>
+
+
+	<body>
+			<main>
+				<div>
+					<button onclick="history.back()" class="top_button">...</button>
+					<header>List of all Articles </header>		
+				</div>					
+				
+				
+				<hr>
+			</main>
+
+			<br>
+
+			<footer>
+			
+				<div>
+					<select id="themeSelect">
+						<option value="Yotsuba">Yotsuba</option>
+						<option value="Yotsuba_B">Yotsuba_B</option>
+						<option value="Dark">Dark</option>
+					</select>
+				</div>
+						
+				<p>© Copyright 2025 Ver0xity. All right Reserved.</p>
+			</footer>
+	
+	
+			<script>
+				function initThemeSelector() {
+					const themeSelect = document.getElementById("themeSelect");
+					const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+					const currentTheme = localStorage.getItem("theme") || "Yotsuba";
+	
+					function activateTheme(themeName) {
+						themeStylesheetLink.setAttribute("href", `../../css/themes/${themeName}.css`);
+					}
+	
+					themeSelect.addEventListener("change", () => {
+						activateTheme(themeSelect.value);
+						localStorage.setItem("theme", themeSelect.value);
+					});
+	
+					themeSelect.value = currentTheme;
+					activateTheme(currentTheme);
+				}
+	
+				initThemeSelector();
+			</script>
+	
+	</body>
+</html>

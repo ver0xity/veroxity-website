@@ -1,0 +1,16 @@
+:root {
+    --primary-background-color: #121212;
+    --secondary-background-color: #121212;
+    
+    --primary-text-color: rgba(255, 255, 255, 0.965);
+    --hr-color: #a6a6a6;
+  
+    --navButton-background-color: #121212;
+    --navButton-text-color: rgba(255, 255, 255, 0.965);
+    --navButton-border-color: #ca681e;
+    --navButton-hover-color: #ca681e;
+
+    --h1-color: #ca681e;
+    --dt-color: #cb702a;
+}
+  

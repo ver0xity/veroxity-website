@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<title> Welcome to Ver0xity's Website </title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="media/icons/home_icon.ico">
+		<link rel="stylesheet" id="themeStylesheetLink" href="css/themes/Yotsuba.css">
+		<link rel="stylesheet" href="css/common.css">
+
+	</head>
+
+	
+	<body>
+		<main>
+		
+			<header> Welcome to Ver0xity's Website! </header>
+			
+			<hr>
+					
+			<p style="text-align: center; font-size: 22px;"><u> Pick Your Poison </u></p>
+			<nav>
+			<div class="navButtons">
+				<a href="content/articles/articles.html"><button style=' width:450px; height:300px; font-size: 20px;'>Articles</button></a>	
+				<a href="content/technology/technology.html"><button style='width:450px; height:300px; font-size: 20px;'>Technology</button></a>
+				<br>
+				<a href="content/entertainment/entertainment.html"><button title="Thoughts on Anime/Manga/Webseries/Movies" style='width:450px; height:300px; font-size: 20px;'>Entertainment</button></a>	
+				<a href="content/about/about.html"><button style='width:450px; height:300px; font-size: 20px'>About</button></a>
+			</div>
+			</nav>
+			
+
+		</main>
+		
+	
+		<hr>
+		
+		<footer>
+			<script type="text/javascript" src="https://freehitcounters.org/count/hi25"></script><br>
+			<a href='http://www.freevisitorcounters.com'>at www.freevisitorcounters.com</a> <script type='text/javascript' src='https://whomania.com/ctr?id=6e0b764159a0bc21a916aa1e236a695243d25f37'></script>
+
+			<div>
+				<select id="themeSelect">
+					<option value="Yotsuba">Yotsuba</option>
+					<option value="Yotsuba_B">Yotsuba_B</option>
+					<option value="Dark">Dark</option>
+				</select>
+			</div>
+					
+			<p>© Copyright 2025 Ver0xity. All right Reserved.</p>
+		</footer>
+
+
+		<script>
+			function initThemeSelector() {
+				const themeSelect = document.getElementById("themeSelect");
+				const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+				const currentTheme = localStorage.getItem("theme") || "Yotsuba";
+
+				function activateTheme(themeName) {
+					themeStylesheetLink.setAttribute("href", `css/themes/${themeName}.css`);
+				}
+
+				themeSelect.addEventListener("change", () => {
+					activateTheme(themeSelect.value);
+					localStorage.setItem("theme", themeSelect.value);
+				});
+
+				themeSelect.value = currentTheme;
+				activateTheme(currentTheme);
+			}
+
+			initThemeSelector();
+		</script>
+
+
+	</body>
+</html>

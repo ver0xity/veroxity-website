@@ -1,0 +1,12 @@
+:root {
+  --primary-background-color: #eef2ff;
+  --secondary-background-color: #c2c9f2;
+  
+  --primary-text-color: black;
+  --hr-color: #a6a6a6;
+
+  --navButton-background-color: #cfdafc;
+  --navButton-text-color: black;
+  --navButton-border-color: #95a5f3;
+  --navButton-hover-color: #b1bbf1;
+}

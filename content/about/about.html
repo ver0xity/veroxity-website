@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<title> About </title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="../../media/icons/eye_icon.ico">
+		<link rel="stylesheet" id="themeStylesheetLink" href="../../css/themes/default.css">
+		<link rel="stylesheet" href="../../css/common.css">
+	</head>
+
+	<body>
+			<main>
+				
+				<div>
+					<button onclick="history.back()" class="top_button">...</button>
+					<header> About me! </header>		
+				</div>		
+
+				<hr>
+
+				<marquee> Your favourite glorified clown, #1 oofy-doofy, 'tismmaxxing retard </marquee>
+				
+				<hr>		
+
+				<p style="text-align: center; font-size: 18px;"> If you want to contact me:  </p>
+				
+
+				<div class="navButtons"; style="text-align:center">
+					<a href="mailto:contact.ver0xity@protonmail.com"><button>My Email</button></a>
+
+					<a href="https://github.com/ver0xity" target=_"blank"><button>GitHub</button></a>
+				</div>
+			
+		</main>
+	
+		
+		<footer>
+			
+			<div>
+				<select id="themeSelect">
+					<option value="Yotsuba">Yotsuba</option>
+					<option value="Yotsuba_B">Yotsuba_B</option>
+					<option value="Dark">Dark</option>
+				</select>
+			</div>
+					
+			<p>© Copyright 2025 Ver0xity. All right Reserved.</p>
+		</footer>
+
+
+		<script>
+			function initThemeSelector() {
+				const themeSelect = document.getElementById("themeSelect");
+				const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+				const currentTheme = localStorage.getItem("theme") || "Yotsuba";
+
+				function activateTheme(themeName) {
+					themeStylesheetLink.setAttribute("href", `../../css/themes/${themeName}.css`);
+				}
+
+				themeSelect.addEventListener("change", () => {
+					activateTheme(themeSelect.value);
+					localStorage.setItem("theme", themeSelect.value);
+				});
+
+				themeSelect.value = currentTheme;
+				activateTheme(currentTheme);
+			}
+
+			initThemeSelector();
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<title> Entertainment </title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="../../media/icons/blue_penguin.ico">
+		<link rel="stylesheet" id="themeStylesheetLink" href="../../css/themes/default.css">
+		<link rel="stylesheet" href="../../css/common.css">
+	</head>
+	
+
+	<body>
+			<main>
+					
+				<div>
+					<button onclick="history.back()" class="top_button">...</button>
+					<header> Entertainment </header>		
+				</div>					
+									
+				<hr>
+				
+				<p style="text-align: center;"> This section is all about the various things I like to consoom. And my unfiltered, worthless opions on them </p>
+
+				<hr style="width: 100%;">				
+						
+				<div class="navButtons">
+					<nav>
+						<h1> Jump to topic </h1>
+						
+						<a href="#2D"><button> Anime & Manga </button></a>
+						
+						<br>
+						
+						<a href="#3D"><button> Movies & Webseries </button></a>
+						
+						<br>
+
+						<a href="#vidya"><button> Video Games </button></a>
+						
+						<br>	
+					</nav>
+				</div>
+
+
+				<hr style="width: 100%;">	
+
+
+				<h1 style="font-size: 30px; text-align: center;" id="2D"> Anime & Manga </h1>
+				
+				<ul>
+					<li> Death Note
+					<li> My Dress Up Darling 		
+				</ul>
+
+
+				<hr style="width: 100%;">	
+
+
+				<h1 style="font-size: 30px; text-align: center;" id="3D"> Movies & Webseries </h1>
+				
+
+				<ul>
+					<li> Fight Club
+					<li> Mr Robot
+				</ul>
+
+				
+				<hr style="width: 100%;">		
+
+
+				<h1 style="font-size: 30px; text-align: center;" id="vidya"> Video Games </h1>
+
+				<ul>
+					<li> Grand Theft Auto V
+					<li> Need for Speed Heat
+				</ul>
+			
+		</main>
+
+		<br>
+		
+		<footer>
+			
+			<div>
+				<select id="themeSelect">
+					<option value="Yotsuba">Yotsuba</option>
+					<option value="Yotsuba_B">Yotsuba_B</option>
+					<option value="Dark">Dark</option>
+				</select>
+			</div>
+					
+			<p>© Copyright 2025 Ver0xity. All right Reserved.</p>
+		</footer>
+
+
+		<script>
+			function initThemeSelector() {
+				const themeSelect = document.getElementById("themeSelect");
+				const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+				const currentTheme = localStorage.getItem("theme") || "Yotsuba";
+
+				function activateTheme(themeName) {
+					themeStylesheetLink.setAttribute("href", `../../css/themes/${themeName}.css`);
+				}
+
+				themeSelect.addEventListener("change", () => {
+					activateTheme(themeSelect.value);
+					localStorage.setItem("theme", themeSelect.value);
+				});
+
+				themeSelect.value = currentTheme;
+				activateTheme(currentTheme);
+			}
+
+			initThemeSelector();
+		</script>
+
+
+	</body>
+</html>
