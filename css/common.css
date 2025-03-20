@@ -44,6 +44,7 @@ html, body{
   .top_button {
     width: 100vw;
     background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
     border: 0px;
     margin: 0px;
   }
