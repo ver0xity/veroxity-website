@@ -26,7 +26,7 @@ html, body{
     background-image: linear-gradient(var(--secondary-background-color), var(--primary-background-color));
     text-align: center;
     color: var(--primary-text-color);
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 500;
     padding: 30px 20px;
     margin-left: 0px;
@@ -94,6 +94,7 @@ html, body{
     width: 50%;
   }
   
+
   
   h1 {
     color: var(--h1-color);
@@ -137,3 +138,16 @@ html, body{
     color: var(--primary-text-color);
   }
   
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+
+  .text-content {
+    font-size: 23px;
+    font-family:'monospace','Courier New', Courier;
+    margin-right: 10%;
+    margin-left: 10%;
+  }

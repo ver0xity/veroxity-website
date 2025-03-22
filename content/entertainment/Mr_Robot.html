@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en_US">
+	<head>
+		<title> Entertainment </title>
+		<meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="../../media/icons/blue_penguin.ico">
+		<link rel="stylesheet" id="themeStylesheetLink" href="../../css/themes/default.css">
+		<link rel="stylesheet" href="../../css/common.css">
+	</head>
+	
+
+	<body>
+			<main>
+					
+				<div>
+					<button onclick="history.back()" class="top_button">...</button>
+					<header> Mr Robot </header>		
+				</div>					
+									
+				<hr>
+
+            <div class="text-content">
+                <p>
+                    Mr. Robot, created by Sam Esmail is one of the BEST TV shows I have ever seen. Although, I haven't seen many...
+                </p>
+                
+                <p>
+                    It follows Elliot Alderson (played by Rami Malek) who works as a cybersecurity engineer at Allsafe.
+                    But unbeknownst to everyone else, he is also a vigilante hacker. 
+                    As the story progresses, it is very obvious that Elliot has a fuck ton of mental health issues.
+                    He is socially awkward, extremely lonely, and feels empty inside. He tries to cope all of this by doing hard drugs.
+                    His life seems to be on autopilot (not explicitly mentioned, but somehow I feel that this is how he feels).
+                    That is until one day, he meets 'Mr. Robot' (played by Christian Slater).
+                </p>
+
+    
+                
+                <p>
+                    Mr Robot is revealed to be the leader of a hacker group called 'FSociety'. He asks Elliot if he feels that he is being controlled by someone else.
+                    That all the choices he has, are meaningless. Because all of them are glorified coporate shit, made in the same factories anyway. He then asks Elliot if he would like to join their group, as they plan to erase all loans, debts, and banking transactions. Basically destroying the economy.
+                    And in the process, freeing everyone.
+                </p>
+
+
+
+                <p>
+                    Now that was the just the jist of the first episode or so. The next section contains spoilers, and covers how I personally feel about the series.
+                </p>
+
+
+                <h1 style="text-align: center;"> Warning Spoilers Ahead! </h1>
+
+    
+
+                <p>
+                    Ngl, the first season was the best for me.
+                    It promised a story that had a lot of potential.
+                    But as the series progressed, it seemed to focus on all the wrong things instead. And that is what killed it for me, and made me drop it at the middle of season 4, but that doesn't mean that I won't complete it eventually (since the end is supposedly going to be great).
+                </p>
+
+                <p>
+                    Mr. Robot has a lot of great characters, and the acting is superb. The cinematography? Oof, it's on a whole new level. And most importantly, all the hacks were realistic. Albeit, very very difficult.
+                </p>
+
+                <p>
+                    But the anarchist, anti-consumerist take at the beginning of the series, was gradually wiped out as the series progressed.
+                    If you have seen the series, you would notice how the main bad guys shifted from the Government and the untouchable 'top 1% of the top 1%', to an egotistical, femboy Chinese minister. Like dude, WTF?
+                    It's like some higher ups didn't like the original story, and altered it to fit their narrative. Which is ironic considering what this series stands for kek. 
+                    Oh yeah, and the evil CEOs and the corrupt FBI officers were potrayed as being manipulated and blackmailed by the Chinese mfers. Come the fuck on guys. Plus, they killed off (quite literally) a lot of loved characters.
+                </p>
+
+                <p>
+                    And one of the most influential, and important character in the series, Whiterose (played by BD Wong) seemed to lack depth.
+                    Apart from the first season where they were actually done right that is. In the later story, they do shit that is boderline- no, actually fucking retarded. All in the name of being egotistical and self-centered.
+                </p>
+
+                <p>
+                    All in all it seems that there was a gradual, yet noticeable decline in the show's quality in the later seasons. But, that isn't to say that the show wasn't good.
+                    I think the reason I shat on the later seasons was because of my extremely high expectations due to the first season.
+                </p>
+
+                <p>
+                    Honestly, I would still reccomend this show to anyone who is interested in cybersecurity, and computers in general.
+                    I mean this was the first time I saw tools like rubber duckys, raspberry pies, etc and Linux being mentioned in the mainstream media for the first time.
+                    I can't lie, even after its somewhat major downsides, it still was pretty darn decent. I would definitely complete it in the near future, and maybe even rewatch the first season.
+                </p>
+            </div>
+
+            <br>
+
+        </main>
+
+		
+		<footer>
+			
+			<div>
+				<select id="themeSelect">
+					<option value="Yotsuba">Yotsuba</option>
+					<option value="Yotsuba_B">Yotsuba_B</option>
+					<option value="Dark">Dark</option>
+				</select>
+			</div>
+					
+			<p>© Copyright 2025 Ver0xity. All right Reserved.</p>
+		</footer>
+
+
+		<script>
+			function initThemeSelector() {
+				const themeSelect = document.getElementById("themeSelect");
+				const themeStylesheetLink = document.getElementById("themeStylesheetLink");
+				const currentTheme = localStorage.getItem("theme") || "Yotsuba";
+
+				function activateTheme(themeName) {
+					themeStylesheetLink.setAttribute("href", `../../css/themes/${themeName}.css`);
+				}
+
+				themeSelect.addEventListener("change", () => {
+					activateTheme(themeSelect.value);
+					localStorage.setItem("theme", themeSelect.value);
+				});
+
+				themeSelect.value = currentTheme;
+				activateTheme(currentTheme);
+			}
+
+			initThemeSelector();
+		</script>
+
+
+	</body>
+</html>
